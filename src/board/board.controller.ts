@@ -7,8 +7,9 @@ import {
   Get,
   UseInterceptors,
   UploadedFile,
-  Res, Query
-} from "@nestjs/common";
+  Res,
+  Query,
+} from '@nestjs/common';
 import { BoardService } from './board.service';
 import { BoardCreateDto } from './boarddto/req/boardCreateDto';
 import { AccessGuard } from '../jwtGuard/access.guard';

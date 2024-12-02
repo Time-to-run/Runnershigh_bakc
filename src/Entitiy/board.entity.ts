@@ -19,7 +19,7 @@ export class BoardEntity extends DefaultEntity {
   @Column()
   status: boolean; //  신청가능, 마감임박
   @Column()
-  gender: string; //  성별 옵션 ex_남녀모두
+  matching: string; //  매칭 옵션
   @Column()
   time: string; // 러닝 시간.
   @Column()

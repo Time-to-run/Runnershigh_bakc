@@ -26,7 +26,7 @@ export class BoardService {
     const board: BoardEntity = new BoardEntity();
     board.title = body.title;
     board.contents = body.contents;
-    board.gender = body.gender;
+    board.matching = body.matching;
     board.time = body.time;
     board.date = body.date;
     board.people = 1;

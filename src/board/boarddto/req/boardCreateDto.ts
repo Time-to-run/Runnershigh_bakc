@@ -6,7 +6,7 @@ export class BoardCreateDto {
   @IsString()
   contents: string;
   @IsString()
-  gender: string;
+  matching: string;
   @IsString()
   time: string;
   @IsString()
