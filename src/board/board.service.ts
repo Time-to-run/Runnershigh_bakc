@@ -66,11 +66,11 @@ export class BoardService {
     return board;
   }
 
-  async search(body: BoardSearchDto) {
+  async search(qur: BoardSearchDto) {
     const board: BoardEntity = await this.boardEntity.findOne({
       relations: { team: true },
       where: {
-        id: body.team,
+        id: qur.team,
       },
     });
     return board;

@@ -7,8 +7,8 @@ import {
   Get,
   UseInterceptors,
   UploadedFile,
-  Res,
-} from '@nestjs/common';
+  Res, Query
+} from "@nestjs/common";
 import { BoardService } from './board.service';
 import { BoardCreateDto } from './boarddto/req/boardCreateDto';
 import { AccessGuard } from '../jwtGuard/access.guard';
@@ -41,9 +41,9 @@ export class BoardController {
     return this.boardService.searchAll();
   }
 
-  @Post('search')
-  async search(@Body() body: BoardSearchDto) {
-    return this.boardService.search(body);
+  @Get('search')
+  async search(@Query() qur: BoardSearchDto) {
+    return this.boardService.search(qur);
   }
 
   @Post('upload')
